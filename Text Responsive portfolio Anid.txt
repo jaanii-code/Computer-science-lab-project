@@ -1,6 +1,6 @@
 ========== NAV ==========
 .nav__logo
-Anid
+Jahanvi
 
 .nav__link
 About Us - Projects - Contact
@@ -11,20 +11,20 @@ About Us - Projects - Contact
 Hello, I'm
 
 .home__name
-Anid <br> Wrooks
+Jahanvi
 
 .home__split
 Creative
 
 .home__profession-1 .home__profession-2
-Developer
-& Designer
+Computer Science Student
+
 
 .home__social
-https://www.linkedin.com/
-https://github.com/
-https://dribbble.com/
-https://about.gitlab.com/
+https://www.linkedin.com/in/jahanvi-verma-713ba0354/
+https://github.com/jaanii-code/Computer-science-lab-project.git
+https://www.facebook.com/share/1BH33CSHn3/
+https://www.instagram.com/jaanuvii.21?igsh=MWxnMWU4aHF4aXQyYg==
 
 .home__cv
 RESUME
@@ -36,10 +36,8 @@ RESUME
 <br> Is My Passion
 
 .about__description
-I'm a web <b>developer and designer</b> passionate 
-about experimenting with new <b>skills and creativity.</b> 
-Driven by learning and curiosity, I'm always looking to 
-explore and learn new development and design skills.
+Motivated Computer Science student with strong problem-solving skills and knowledge of <b>C++, Python, MySQL, and web technologies.</b>
+I am continuously improving my technical skills through projects, coding practice, and collaboration, and I am motivated to create innovative solutions that have a real-world impact.
 
 .button
 Resume
@@ -53,33 +51,25 @@ I Make Incredible <br>
 .projects__number h1 - h3 .projects__title .projects__subtitle .projects__description
 01
 Web
-Barbershop <br> website
-Technologies used
-HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
+Pizza Restaurant Website
+BSG College Of IT
+2024
+Developed a responsive restaurant website using HTML, CSS, and JavaScript. Created interactive pages including home, menu, and contact sections while improving navigation and user experience.
 
 02
-Design
-Interface Design <br> For Ice Cream Shop
-Technologies used
-HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
+Web
+University Management System
+Gisma University Of Applied Sciences
+2026
+Built a student record management system using Python and MySQL for storing, updating, and managing student data efficiently.
+GitHub Repo: https://github.com/jaanii-code/university-database-project.git
 
 03
 Web
-SEO For Coffee <br> Websites
-Technologies used
-HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
-
-04
-Design
-Web Design <br> For Restaurant
-Technologies used
-HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
-
-05
-Web
-Fast Food <br> Website
-Technologies used
-HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
+Personal Portfolio Website
+Gisma University Of Applied Sciences
+2026
+Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and contact information.
 
 
 ========== WORK ==========
@@ -92,41 +82,31 @@ Experience
 Education
 
 .work__title .work__subtitle .work__year .work__description
-Web <br> Developer
-Google Inc
-2020
-Web developer handling technologies such as Angular, 
-databases, CMS, assisting with web optimization.
+Ops <br> Associate
+Flink SE
+Jun 2025 - Apr 2026
+Maintained inventory records and handled real-time data entry, updates, and reporting.
 
-Web <br> Designer
-Google Inc
-2022
-Web developer handling technologies such as Angular, 
-databases, CMS, assisting with web optimization.
+IELTS Trainer & <br> Data Assistant
+Alex Institute
+Aug 2024 - Jan 2025
+Conducted IELTS training and managed student records, schedules, and performance data.
 
-SEO & Web <br> Optimization
-Google Inc
-Now
-Web developer handling technologies such as Angular, 
-databases, CMS, assisting with web optimization.
+Workflow Support
+Flink SE / Alex Institute
+2024 - 2026
+Worked in fast-paced environments with strong attention to detail, organization, and deadlines.
 
-Systems <br> Engineering
-University
-2010
-College student, learning the basics of programming, 
-web development, and other topics, graduating with honors.
+BSc <br> Computer Science
+Gisma University Berlin, Germany
+2024 - Present
+Pursuing computer science with a focus on software development, 
+problem solving, and modern web technologies.
 
-Web <br> Programming
-University
-2015
-College student, learning the basics of programming, 
-web development, and other topics, graduating with honors.
-
-Usability <br> (UX/UI)
-University
-2018
-College student, learning the basics of programming, 
-web development, and other topics, graduating with honors.
+Higher Secondary
+Guru Harkrishan Public School, India
+2023-2024
+Completed higher secondary education in India.
 
 
 ========== SERVICES ==========
@@ -134,43 +114,40 @@ web development, and other topics, graduating with honors.
 What I <span>Offer</span>
 
 .services__title .services__description .services__subtitle .services__skills
-Developer
-Website creation with HTML, CSS, JavaScript. 
-Professional websites with TypeScript, React, 
-Node JS, and lots of creativity.
+Programming
+Languages like C, C++, JavaScript, and Python for problem solving and development.
 
 Skills & Tools
-HTML - CSS - JavaScript - React - TypeScript
-Node Js - Next Js - PHP - GitHub
+C - C++ - JavaScript - Python
 
-Design
-Web designer with Figma and Sketch, creating 
-motion designs with After Effects, creativity 
-and design at its best.
+Web Development
+HTML, CSS, and JavaScript for building responsive and interactive websites.
 
 Skills & Tools
-Figma - Adobe XD - Photoshop - Ilustrator
-Sketch - 3D Modeling - After Effects
+HTML - CSS - JavaScript - Latex
+
+Data Management
+Data structures and databases for organizing, managing, and working with information efficiently.
+
+Skills & Tools
+Data Structure - Database - Touch Typing
 
 
 ========== TESTIMONIALS ==========
 .section__title
-<span>What They Say</span> 
+<span>What I Say</span> 
 <br> About Me
 
 .testimonials__name
-Abex Wrooks
-Willer Morth
-Llemi Llorens
-Jems Guiller
+Jahanvi
 
 .testimonials__number
 5.0
 
 .testimonials p
-The company offers many easy-to-use services, 
-with hard work and round-the-clock support on 
-all projects.
+I am passionate about computer science because it combines creativity with problem-solving. 
+I enjoy building projects, learning new technologies, and finding efficient solutions to real-world challenges. 
+Every project is an opportunity to grow my skills and contribute something meaningful.
 
 
 ========== CONTACT ==========
@@ -178,13 +155,13 @@ all projects.
 Contact Me
 
 .contact__description
-Tell me about your next project.
+Submit the form and I’ll know who messaged me.
 
 .contact__button
 Copy email
 
 .contact__email
-anid123@email.com
+itsjahanvi21@gmail.com
 
 .contact__title
 Email
@@ -193,27 +170,20 @@ Social Media
 Write Me & We'll Talk
 
 .contact__address
-Willer123@email.com
-Lima, Peru
+Berlin, germany
 
 .contact__link
-Linkedin - GitHub - Dribbble - GitLab
+WhatsApp - Facebook - Instagram
 
-https://www.linkedin.com/
-https://github.com/
-https://dribbble.com/
-https://about.gitlab.com/
-
-WhatsApp - Messenger - Telegram -  instagram
-
-https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!
-https://m.me/bedimcode
-https://t.me/telegram
-https://www.instagram.com/
+https://www.linkedin.com/in/jahanvi-verma-713ba0354/
+https://github.com/jaanii-code/Computer-science-lab-project.git
+https://wa.me/+4917622867488
+https://www.facebook.com/share/1BH33CSHn3/
+https://www.instagram.com/jaanuvii.21?igsh=MWxnMWU4aHF4aXQyYg==
 
 ========== FOOTER ==========
 .footer__copy
-All Rights Reserved By <span>Bedimcode</span>
+All Rights Reserved By <span>Jahanvi</span>
 
 .footer__year
-&#169; 2025
+&#169; 2026

@@ -1,85 +1,211 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Jahanvi's responsive portfolio website.">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <title>Jahanvi | Portfolio</title>
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <style>
+      :root {
+         --bg: #0c1020;
+         --surface: rgba(255,255,255,.06);
+         --surface-2: rgba(255,255,255,.1);
+         --text: #e8ecff;
+         --muted: #b5bdd8;
+         --accent: #8f6bff;
+         --accent-2: #57d3ff;
+         --line: rgba(255,255,255,.12);
+         --max: 1120px;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+         color: var(--text);
+         background:
+            radial-gradient(circle at top left, rgba(143,107,255,.32), transparent 24%),
+            radial-gradient(circle at top right, rgba(87,211,255,.18), transparent 20%),
+            var(--bg);
+      }
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+      .container { width: min(var(--max), calc(100% - 2rem)); margin: 0 auto; }
+      .section { padding: 5rem 0; }
+      .section__title { font-size: clamp(1.6rem, 4vw, 2.5rem); margin: 0 0 1.25rem; }
+      .section__title span { color: var(--accent-2); }
+      .card {
+         background: var(--surface);
+         border: 1px solid var(--line);
+         border-radius: 1.5rem;
+         backdrop-filter: blur(12px);
+         box-shadow: 0 20px 50px rgba(0,0,0,.24);
+      }
+      .button {
+         display: inline-flex;
+         align-items: center;
+         gap: .5rem;
+         padding: .9rem 1.2rem;
+         border-radius: 999px;
+         background: linear-gradient(135deg, var(--accent), var(--accent-2));
+         font-weight: 700;
+      }
+      .nav {
+         position: sticky; top: 0; z-index: 10;
+         border-bottom: 1px solid var(--line);
+         backdrop-filter: blur(14px);
+         background: rgba(12,16,32,.7);
+      }
+      .nav__inner {
+         display: flex; align-items: center; justify-content: space-between;
+         padding: 1rem 0;
+      }
+      .nav__links { display: flex; gap: 1rem; flex-wrap: wrap; }
+      .nav__logo { font-weight: 800; letter-spacing: .04em; }
+      .hero {
+         display: grid; gap: 2rem;
+         grid-template-columns: 1.1fr .9fr;
+         align-items: center;
+      }
+      .hero__copy h1 { font-size: clamp(2.5rem, 7vw, 5.2rem); margin: .2rem 0 1rem; line-height: .95; }
+      .hero__copy p { color: var(--muted); line-height: 1.7; max-width: 60ch; }
+      .hero__profile {
+         justify-self: center;
+         width: min(100%, 360px);
+         padding: 1rem;
+      }
+      .hero__profile img { border-radius: 1.25rem; }
+      .grid-2 { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .project-list, .skills-list, .contact-grid { display: grid; gap: 1rem; }
+      .project-item, .skill-item, .contact-item { padding: 1.25rem; }
+      .project-item h3, .skill-item h3, .contact-item h3 { margin: 0 0 .4rem; }
+      .muted { color: var(--muted); }
+      .gallery {
+         display: grid; gap: 1rem;
+         grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+      .gallery img { border-radius: 1.25rem; }
+      .footer {
+         padding: 2rem 0 3rem; color: var(--muted);
+      }
+      @media (max-width: 820px) {
+         .hero, .grid-2, .gallery { grid-template-columns: 1fr; }
+      }
+   </style>
+</head>
+<body>
+   <header class="nav">
+      <div class="container nav__inner">
+         <a class="nav__logo" href="#home">Jahanvi</a>
+         <nav class="nav__links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#work">Experience</a>
+            <a href="#contact">Contact</a>
+         </nav>
+      </div>
+   </header>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+   <main>
+      <section class="section" id="home">
+         <div class="container hero">
+            <div class="hero__copy">
+               <p class="muted">Hello, I'm</p>
+               <h1>Jahanvi<br>Portfolio</h1>
+               <p>Motivated Computer Science student with strong problem-solving skills and knowledge of C++, Python, MySQL, and web technologies.</p>
+               <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+                  <a class="button" href="assets/pdf/Jaaniii_Portfolio.pdf" target="_blank" rel="noreferrer">Resume <i class="ri-download-line"></i></a>
+                  <a class="button" href="#contact" style="background:var(--surface-2);">Contact Me</a>
+               </div>
+            </div>
+            <div class="hero__profile card">
+               <img src="assets/img/jahanvii.png" alt="Jahanvi profile photo">
+            </div>
+         </div>
+      </section>
 
-      <title>Responsive portfolio website Anid - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
+      <section class="section" id="about">
+         <div class="container grid-2">
+            <div class="card" style="padding:1.25rem;">
+               <img src="assets/img/jaanii.png" alt="Jahanvi about photo" style="border-radius:1rem;">
+            </div>
+            <div>
+               <h2 class="section__title"><span>About</span> Me</h2>
+               <p class="muted">I am continuously improving my technical skills through projects, coding practice, and collaboration, and I am motivated to create innovative solutions that have a real-world impact.</p>
+            </div>
+         </div>
+      </section>
 
-      </header>
+      <section class="section" id="projects">
+         <div class="container">
+            <h2 class="section__title">My <span>Projects</span></h2>
+            <div class="project-list">
+               <article class="card project-item">
+                  <h3>Pizza Restaurant Website</h3>
+                  <p class="muted">BSG College Of IT • 2024</p>
+                  <p>Developed a responsive restaurant website using HTML, CSS, and JavaScript.</p>
+               </article>
+               <article class="card project-item">
+                  <h3>University Management System</h3>
+                  <p class="muted">Gisma University Of Applied Sciences • 2026</p>
+                  <p>Built a student record management system using Python and MySQL.</p>
+                  <p><a href="https://github.com/jaanii-code/university-database-project.git" target="_blank" rel="noreferrer">GitHub Repo</a></p>
+               </article>
+               <article class="card project-item">
+                  <h3>Personal Portfolio Website</h3>
+                  <p class="muted">Gisma University Of Applied Sciences • 2026</p>
+                  <p>Developed a responsive portfolio website using HTML, CSS, and JavaScript.</p>
+               </article>
+            </div>
+         </div>
+      </section>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!-- CUSTOM CURSOR -->
-         
-         <!--==================== HOME ====================-->
-         <section class="home section">
-            
-            
-         </section>
+      <section class="section" id="work">
+         <div class="container">
+            <h2 class="section__title">Work <span>Experience</span></h2>
+            <div class="project-list">
+               <article class="card project-item">
+                  <h3>Ops Associate</h3>
+                  <p class="muted">Flink SE • Jun 2025 - Apr 2026</p>
+                  <p>Maintained inventory records and handled real-time data entry, updates, and reporting.</p>
+               </article>
+               <article class="card project-item">
+                  <h3>IELTS Trainer & Data Assistant</h3>
+                  <p class="muted">Alex Institute • Aug 2024 - Jan 2025</p>
+                  <p>Conducted IELTS training and managed student records, schedules, and performance data.</p>
+               </article>
+            </div>
+         </div>
+      </section>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
+      <section class="section" id="contact">
+         <div class="container">
+            <h2 class="section__title">Contact <span>Me</span></h2>
+            <div class="contact-grid grid-2">
+               <div class="card contact-item">
+                  <h3>Write Me & We'll Talk</h3>
+                  <p class="muted">Submit the form and I’ll know who messaged me.</p>
+                  <p>Berlin, germany</p>
+               </div>
+               <div class="card contact-item">
+                  <h3>Social Links</h3>
+                  <p><a href="https://wa.me/+4917622867488" target="_blank" rel="noreferrer">WhatsApp</a></p>
+                  <p><a href="https://www.facebook.com/share/1BH33CSHn3/" target="_blank" rel="noreferrer">Facebook</a></p>
+                  <p><a href="https://www.instagram.com/jaanuvii.21?igsh=MWxnMWU4aHF4aXQyYg==" target="_blank" rel="noreferrer">Instagram</a></p>
+               </div>
+            </div>
+         </div>
+      </section>
 
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
-         </section>
+   </main>
 
-         <!--==================== WORK ====================-->
-         <section class="work section">
-
-         </section>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-
-         </section>
-
-         <!--==================== TESTIMONIALS ====================-->
-         <section class="testimonials section">
-
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer grid">
-         
-      </footer>
-      
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== ANIME JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
-
-      <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+   <footer class="footer">
+      <div class="container">All Rights Reserved By Jahanvi © 2026</div>
+   </footer>
+</body>
 </html>
