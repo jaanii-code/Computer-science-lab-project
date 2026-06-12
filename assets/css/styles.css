@@ -169,8 +169,12 @@ img {
 
 /*=============== ABOUT ===============*/
 
-
+{ padding-bottom: 2.5rem; } 
+/*=============== SKILLS ===============*/
+{ padding-top: 2.5rem; }
+.skills-list { gap: .85rem; } .skill-item { padding: 1rem; } .skill-item h3 { margin: 0 0 .35rem; } .skill-item .muted { line-height: 1.5; } #skills .section__title { margin-bottom: .75rem; }
 /*=============== PROJECTS ===============*/
+
 
 
 /* Swiper class */
