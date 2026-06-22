@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>main</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<div class="titlepage">
+<p><img src="./logo.jpeg" style="height:4cm" alt="image" /></p>
+<p><span>GISMA University of Applied Sciences</span></p>
+<p><span><strong>Computer Science Portfolio Project</strong></span></p>
+<p><span>B201D Computer Science Lab</span></p>
+<p><strong>Student Name:</strong><br />
+Jahanvi</p>
+<p><strong>Student ID:</strong><br />
+GH1040369</p>
+<p><strong>Professor Name:</strong><br />
+William Baker Morrison</p>
+<p>2026-06-22</p>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>The report presents the design, development, and evaluation of my
+personal portfolio website. The purpose of this project is to create a
+online portfolio that showcases my technical skills, academic
+achievements, and projects, applying for internship or working student
+positions. My personal portfolio website mainly consists of three
+components a GitHub repository which contains the project files, a
+website using GitHub Pages, and a professional curriculum vitae (CV)
+created in LaTeX. The website was developed using HTML, CSS and
+JavaScript because they provide a strong understanding for building a
+website. This report tells about objects of the project, structure of
+website and GitHub, which technologies i have used, the implementation
+process, and future outcome.</p>
+<h1 id="project-objectives">Project Objectives</h1>
+<p>The project was developed using various objectives</p>
+<ul>
+<li><p>Develop a professional portfolio website.</p></li>
+<li><p>Created a CV using LaTeX.</p></li>
+<li><p>Demonstrate knowledge of HTML, CSS, and JavaScript.</p></li>
+<li><p>Git and GitHub were used for version control.</p></li>
+<li><p>Hosted a website using GitHub Pages.</p></li>
+<li><p>Present technical skills and projects effectively.</p></li>
+</ul>
+<h1 id="portfolio-overview">Portfolio Overview</h1>
+<h2 id="portfolio-website">Portfolio Website</h2>
+<p><a href="https://jaanii-code.github.io/Computer-science-lab-project/"
+class="uri">https://jaanii-code.github.io/Computer-science-lab-project/</a></p>
+<h2 id="github-repository">GitHub Repository</h2>
+<p><a href="https://github.com/jaanii-code/Computer-science-lab-project"
+class="uri">https://github.com/jaanii-code/Computer-science-lab-project</a></p>
+<p>The portfolio website presents my educational background, technical
+skills, selected projects, and contact details. It was designed
+concisely because visitors or hiring managers can understand the type of
+work i have completed and the knowledge i have gained from my field. In
+addition, by building the website , I learned not only the theoretical
+understanding but also to translate the ideas into the online
+website.</p>
+<p>The website was designed to be responsive, easy to navigate, and
+visually appealing for creating a professional first impression.</p>
+<h1 id="website-structure">Website Structure</h1>
+<p>The website consists of several sections, each section was designed
+in a structured way to present a specific type of information, which
+shows clearly and professionally portfolio.</p>
+<h2 id="home-section">Home Section</h2>
+<p>The homepage introduces visitors to the portfolio, the primary
+purpose is to provides a summary of who I am. The homepage was designed
+to be concise so that visitors can understand the site without any
+complexity. Moreover, my resume is available on the portfolio website
+which is created in LaTeX.</p>
+<figure data-latex-placement="H">
+<img src="./home.png" style="width:90.0%" />
+<figcaption>Homepage of the Portfolio Website</figcaption>
+</figure>
+<h2 id="about-me">About Me</h2>
+<p>This section contains information about my educational background,
+interests, and career goals. . It is consider to be important as it
+helps employers to see the technical skills as they are also interested
+in motivation, and to present oneself professionally.</p>
+<h2 id="skills">Skills</h2>
+<p>The skills section highlights my technical capabilities including
+programming languages, development tools, and relevant technologies. It
+allows to quickly identify the abilities I have gained in the area I
+have worked practically, while it helps the people who are visiting my
+site to match the technical requirements according to their preferences,
+which makes it easier without going into deeper sections.</p>
+<figure data-latex-placement="H">
+<img src="./skill.png" style="width:90.0%" />
+<figcaption>Skills Section</figcaption>
+</figure>
+<h2 id="projects">Projects</h2>
+<p>The projects section is one of the most important part of the
+portfolio as it includes about experiences or examples of work . Rather
+than stating the technical skills , it also includes that how all the
+skills i have applied in practice. I have worked in selected projects to
+demonstrate the problem-solving skills, and technical skills i have
+learned.</p>
+<figure data-latex-placement="H">
+<img src="./projects.png" style="width:90.0%" />
+<figcaption>Projects Section</figcaption>
+</figure>
+<h2 id="contact-section">Contact Section</h2>
+<p>The contact section provides information that allows employers,
+collaborators, or other visitors to reach me. Including this information
+is mandatory as the website not only contain the information but also
+the communication opportunities.</p>
+<h1 id="github-repository-structure">GitHub Repository Structure</h1>
+<p>The GitHub repository is organized, and separating the files
+according to the project so that it is easier to understand or update in
+the future.</p>
+<pre><code>Computer-science-lab-project/
+|
+|-- index.html
+|
+|-- assets/
+|   |-- images/
+|   |-- logo.jpeg
+|   |-- css/
+|   |-- js/
+|   | cv/
+|   |-- cv.tex
+|   |-- cv.pdf
+|-- website.txt
+|-- README.md</code></pre>
+<p>The <strong>index.html</strong> contains the main text of the
+portfolio website . The <strong>style.css</strong> file was used to
+control the appearance of website, including layout, fonts and overall
+design, while <strong>script.js</strong> provides interactive behavior,
+improve the webpage where needed. The <strong>assets</strong> directory
+stores supporting files such as images and logo. The cv folder contains
+both the LaTeX source file and the generated PDF version of the CV,
+which makes this to maintain and update the document efficiently.
+Lastly, the <strong>README.md</strong> file tells the documentation for
+the repository and helps visitors to know about the project .This
+structure reflects a separation of concerns, where content, styling,
+behavior, and documentation are kept distinct.</p>
+<h1 id="technologies-used">Technologies Used</h1>
+<p>A range of technologies were used in building-up the portfolio
+website. Each technology has its own role:</p>
+<h2 id="html">HTML</h2>
+<p>HTML was used for the structure of the website. It provided all the
+sections headings, paragraphing, links and images.</p>
+<h2 id="css">CSS</h2>
+<p>CSS was used to control the visual design of the website including
+colors, spacing, fonts, and layout. It also implement the responsive
+design so that the website can fit into different screen sizes.</p>
+<h2 id="javascript">JavaScript</h2>
+<p>JavaScript was used to add interactive functionality and improve the
+user experience. Even in my simple portfolio website it helps to enhance
+usability by making the components more dynaminc.</p>
+<h2 id="git">Git</h2>
+<p>Git was used for version control throughout development.</p>
+<h2 id="github">GitHub</h2>
+<p>GitHub was used for hosting source code and managing project
+versions, from this the project was updated in an easy manner .</p>
+<h2 id="github-pages">GitHub Pages</h2>
+<p>GitHub Pages was selected because it provides a simple,free and
+effective way for hosting static websites directly from GitHub
+repository.</p>
+<h2 id="latex">LaTeX</h2>
+<p>LaTeX was used to create a professional curriculum vitae and to
+prepare the technical documentation. It was used because it enables
+precise formatting, and structured documentation output for professional
+contexts.</p>
+<h1 id="design-decisions">Design Decisions</h1>
+<p>Several design decisions were made to ensure that portfolio should be
+professional , usable and appropriate for the visitors who sees my
+portfolio website.</p>
+<h2 id="responsive-design">Responsive Design</h2>
+<p>Responsive design techniques were implemented as it is considered to
+be important because someone ´can access the portfolio from other
+devices such as laptops, tablets and smartphones. This reason meant that
+layout design be adjusted to different sizes that text as well as the
+designs remains same.</p>
+<h2 id="navigation-layout">Navigation Layout</h2>
+<p>A simple navigation menu was chosen to allow users to access content
+quickly between the sections of the site. A simple and straightforward
+navigation menu helps to reduces the load and improves the overall
+experience.</p>
+<h2 id="color-scheme">Color Scheme</h2>
+<p>A professional and minimalist color palette was selected to improve
+readability and clean visual appearance. The chosen color also helps to
+be more formal or professional tone, which make this appropriate for a
+portfolio intended for hiring managers.</p>
+<h2 id="typography">Typography </h2>
+<p>Clear and readable typography was used to ensure that users can
+easily engage with the content. Spacing, font sizes, and contrast allows
+to read easily. Also, good typography helps to maintain the professional
+quality of portfolio website.</p>
+<h2 id="github-pages-deployment">GitHub Pages Deployment</h2>
+<p>GitHub Pages was chosen because it integrates directly with GitHub
+repositories and simplifies the publishing process. This decision was
+made to smooth the workflow from development to deployment. Overall,
+these all designs were made to create the website more functional,
+visually coherent and meet with expectations of technical portfolio.</p>
+<h1 id="implementation-process">Implementation Process</h1>
+<p>The project followed the development structured process which consist
+of several stages, starting with the planning, and concluding with
+testing to ensure that the project remain manageable and also the final
+outcome met the required objectives. First, the structure was designed
+by creating most important sections in professional website, such as
+homepage, about me , skills, project and contact information. After
+this, the visual layout was designed to focus on simplicity, clarity,
+and user-friendly navigation. The HTML structure was developed to
+website’s content, layout and overall page documentation. Moreover,
+completing the structural thing was complete, CSS was used to style the
+data page, visual design of the site. JavaScript was then implemented to
+add interactive things which enhances the users experiences. Apart from
+this, CV was created in LaTeX to ensure a well-structured document.
+After all the implementations, all files are uploaded in GitHub, and the
+website was deployed through GitHub Pages. At last, improving the site,
+fixing issues, or testing was involved where necessary.</p>
+<h1 id="evaluation-and-reflection">Evaluation and Reflection</h1>
+<h2 id="strengths">Strengths</h2>
+<p>The portfolio demonstrates several strengths. One of its main
+strength is professional appearance, which makes it easier for the
+hiring managers, or users to navigate each section in an accessible and
+organized way to get the information. Another strength is responsive
+design, which supports ability across different devices.</p>
+<h2 id="weaknesses">Weaknesses</h2>
+<p>Despite these strengths, the portfolio website has limitations. One
+limitation is small number of showcased projects, which reduces the
+technical evidence to the users. Another limitation, the features such
+as fully working contact form are not implemented. In addition, the
+level of interactivity remains basic.</p>
+<h2 id="challenges-faced">Challenges Faced</h2>
+<p>The development process presented several challenges, first, I
+struggled with using LaTeX to style a professionally formatted CV. Rich
+in features though hard to use, and I had some syntax problems that did
+not allow me to style. Trial and error – eventually, I was able to
+obtain a clean, styled resume. Additionally, the challenge was deploy a
+website correctly using GitHub, especially in relation to repository
+structure and public hosting settings.</p>
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+<p>Developing this portfolio gave me hands-on experience with front-end
+web development using HTML, CSS, and JavaScript, as well as technical
+documentation and deployment using GitHub Pages. It also taught me how
+to document and present projects professionally, including code and
+documentation. These experiences are highly transferable to my future
+career as a data analyst, front- end developer, or scholarly publisher.
+Above all, this project taught me how to have confidence presenting
+myself online—technologically and visually.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>This project successfully achieved its core objectives by developing
+a professional computer science portfolio website together with a
+supporting GitHub repository and LaTeX CV. It also provides a
+professional structure, which can be applied in internships, working
+student positions, and future employment opportunities. The portfolio
+demonstrates skills in web development, version control, deployment, and
+technical documentation. The project provided valuable experience in
+planning, structuring, implementing, and evaluating a technical
+solution. As a result, it strengthened both my practical development
+skills and my understanding of how to present technical work in a
+professional format. In the future, I plan to further develop this
+project with dynamic features, more interactive graphs, and even
+incorporate it into my class work or internship projects.</p>
+</body>
+</html>
